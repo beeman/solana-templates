@@ -16,6 +16,12 @@ jobs:
         template: [ next-tailwind, react-vite-tailwind ]
 
     steps:
+      - name: Setup Anchor
+        uses: metadaoproject/setup-anchor@v3.1
+        with:
+          anchor-version: '0.30.1'
+          solana-cli-version: '2.0.21'
+          node-version: ${{ matrix.node }}
       - name: Checkout repository
         uses: actions/checkout@v4
 
