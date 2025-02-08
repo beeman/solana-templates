@@ -13,7 +13,7 @@ jobs:
       matrix:
         node: [ 18, 20, 22 ]
         pm: [ npm, pnpm, yarn ]
-        template: [ next-tailwind, react-vite-tailwind ]
+        template: [ next-tailwind, next-tailwind-basic, next-tailwind-counter, react-vite-tailwind, react-vite-tailwind-basic, react-vite-tailwind-counter ]
 
     steps:
       - name: Setup Anchor
